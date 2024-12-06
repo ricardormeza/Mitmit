@@ -12,7 +12,7 @@ function CarListOptions({distancia}) {
     <div className='mt-5'>
       <h2 className='text-xl'>Unidad disponible</h2>
       {CarListData.map((item,index)=>(
-        <div className={`cursor-pointer p-2 rounded-md border-black
+        <div key={item.id} className={`cursor-pointer p-2 rounded-md border-black
           ${activeIndex==index?'border-[2px]':null}`}
           onClick={()=>{setActiveIndex(index);
             setSelectedCar(item)
