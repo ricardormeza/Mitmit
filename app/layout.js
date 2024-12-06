@@ -1,10 +1,12 @@
+
 import localFont from "next/font/local";
 import {
   ClerkProvider,
   SignInButton,
   SignedIn,
   SignedOut,
-  UserButton
+  UserButton,
+  useUser
 } from '@clerk/nextjs'
 import Header from "/components/Header";
 import "./globals.css";
